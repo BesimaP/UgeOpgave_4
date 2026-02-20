@@ -1,5 +1,3 @@
-package Assignment_2;
-
 public class Product {
     String name;
     double price;

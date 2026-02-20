@@ -1,0 +1,32 @@
+@startuml
+!pragma layout smetana
+
+    class BankAccount {
+    String owner;
+    double balance;
+    ArrayList <Transaction>transaction
+
+    BankAccount(String owner)
+    void deposit(double amount);
+    void withdraw(double amount);
+    void printTransactionsHistory();
+    double getbalance();
+
+    }
+
+    class Transaction{
+    String type;
+    double amount;
+
+    Transaction(String type, double amount)
+    String toString()
+    }
+
+BankAccount *-- Transaction
+
+   class Main{
+   void main()
+
+   }
+
+@enduml

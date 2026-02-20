@@ -1,5 +1,3 @@
-package Assignment_3;
-
 import java.util.ArrayList;
 
     public class BankAccount {
@@ -18,7 +16,8 @@ import java.util.ArrayList;
         public void deposit(double amount) {
             if(amount > 0){
                 balance = balance + amount;
-                transactions.add(new Transaction("deposit", amount));
+                Transaction t = new Transaction("deposit", amount);
+                transactions.add(t);
                 System.out.println("Indsatte " + amount + " kr.");
             }
         }
@@ -26,7 +25,9 @@ import java.util.ArrayList;
         public void withdraw(double amount) {
             if(amount > 0 && amount <= balance){
                 balance = balance - amount;
-                transactions.add(new Transaction("withdrawal", amount));
+                Transaction t = new Transaction("withdraw", amount);
+                transactions.add(t);
+
                 System.out.println("Hævede " + amount + " kr.");
             } else if (amount > balance) {
                 System.out.println("Ikke nok penge på kontoen");
@@ -35,10 +36,10 @@ import java.util.ArrayList;
 
         public void printTransactionHistory(){
             System.out.println("\n~~~Transaktionshistorisk for " + owner + " ~~~");
+            int transactionNumber = 1;
             for (Transaction t : transactions){
-                System.out.println(t);
+                transactionNumber++;
             }
-
         }
 
         public double getBalance(){

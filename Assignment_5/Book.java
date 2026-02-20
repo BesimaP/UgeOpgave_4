@@ -1,6 +1,4 @@
-package Assignment_5;
-
-    public class Book {
+public class Book {
         String title;
         String author;
         boolean available;

@@ -1,5 +1,3 @@
-package Assignment_6;
-
 import java.awt.*;
 import java.util.ArrayList;
 

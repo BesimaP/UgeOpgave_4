@@ -1,0 +1,27 @@
+@startuml
+!pragma layout smetana
+
+class Player{
+String name
+int skilllLevel
+Player()
+String toSting ()
+}
+
+class Team {
+String teamName
+ArrayList<Player>
+
+void addPlayer(Player p)
+void getAverageSkill()
+void printTeam()
+void compete(Team opponent)
+}
+
+Team *--- Player
+
+class main{
+void main
+
+}
+@enduml

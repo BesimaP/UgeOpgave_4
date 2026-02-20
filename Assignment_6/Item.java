@@ -1,5 +1,3 @@
-package Assignment_6;
-
     public class Item {
         String name;
         int value;

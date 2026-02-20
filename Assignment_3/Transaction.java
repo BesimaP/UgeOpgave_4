@@ -1,5 +1,3 @@
-package Assignment_3;
-
 public class Transaction {
 
     String type;

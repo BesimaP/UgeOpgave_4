@@ -1,6 +1,4 @@
-package Assignment_5;
-
-    public class Main {
+    public class Main5 {
         public static void main(String[] args) {
             Library library = new Library("Københavns Bibliotek");
 

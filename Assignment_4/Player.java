@@ -1,6 +1,4 @@
-package Assignment_4;
-
-    public class Player {
+public class Player {
         String name;
         int skillLevel;
 
